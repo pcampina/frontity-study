@@ -1,0 +1,15 @@
+name: frontity
+recipe: wordpress
+config:
+  php: "7.4"
+  via: apache:2.4
+  webroot: .
+  database: mysql:5.7
+  xdebug: true
+services:
+  database:
+    type: mysql
+    creds:
+      user: frontity
+      password: frontity
+      database: frontity
